@@ -2,12 +2,15 @@ import argparse
 import socket
 from concurrent.futures import ThreadPoolExecutor
 
+#------------------------------
+# Terminal Commands (IN PROGRESS)
+#------------------------------
+def parse_arg():
+  parser = argparse.ArgumentParser(description="Basic Port Scanner")
 
-#------------------------------
-# User inputs
-#------------------------------
-print("What is the IP you want to scan?")
-target = input()
+  # Required inputs
+  parser.add_argument('-t', '--target',)
+
 
 #------------------------------
 # Port Scanning Function
@@ -29,6 +32,7 @@ def port_scan(ip, port):
 # Main Execution
 #------------------------------
 def main():
+  args = parse_arg()
   ports = range(1,1025) # Scan common ports
   with ThreadPoolExecutor(max_workers=100) as executor:
     for port in ports:
