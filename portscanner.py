@@ -39,7 +39,6 @@ def main():
     parser.add_argument('-t', '--targets', nargs='+', help='Target IPs/Domains', required=True) 
     parser.add_argument('-p', '--port-range', default='1-100', help='Port range (e.g., 1-100 or "all")')
     parser.add_argument('-T', '--timeout', default=1.0, type=float, help='Timeout in seconds (default: 1.0)')
-    parser.add_argument('-o', '--output', help='Output file (e.g., output.txt)')
     args = parser.parse_args()
 
     # Parse port range
