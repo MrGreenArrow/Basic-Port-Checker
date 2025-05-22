@@ -11,6 +11,8 @@ This project is intended to serve as a basic port scanner. It is a simple script
   - [Installation](#installation)
 - [Usage](#usage)
 
+## Purpose
+The purpose of this project is to provide a program that performs port scans for us. This isn't a massive project, but there are WAY better alternatives like nmap, so I need to dive more into the code to try to expand it. I may not come back to this, but if I do, the future features I intend to add are below, as are the current features.
 
 ### Features-
 - Able to take a domain or IP and scan it for any potential open ports.
